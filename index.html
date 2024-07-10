@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Burger</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> BURGER</i>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                Peça aqui
+            </button>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+        </div>
+    </header>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>    
+            <div id="cta">
+                <h1 class="title">
+                    O sabor vai até <span>você</span>
+                </h1>
+                <p class="description">
+                    Nossa paixão por hambúrgueres artesanais nos inspira a criar combinações irresistíveis, utilizando apenas os ingredientes mais frescos e de alta qualidade. Cada mordida é uma explosão de sabor, com carnes suculentas, pães macios e acompanhamentos que elevam a experiência gastronômica.
+                </p>
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">Ver Cardápio</a>
+                    <a href="tel:719949494" id="phone_button">
+                        <i class="fa-solid fa-phone"></i> (71) 99919-5766
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/imagens/new.png" alt="Imagem do Banner">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápios</h2>
+            <h3 class="section-subtitle">Nossos hambúrgueres especiais</h3>
+
+            <div id="dishes-container">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/imagens/burguer com frita.jpg" class="dish-img" alt="Burguer com fritas">
+                    <h3 class="dish-title">BURG IMPERIAL</h3>
+                    <span class="dish-description">O melhor que nos temos</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(1000+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$26.60</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/imagens/caveira bahia.png" class="dish-img" alt="Baião Rockeiro">
+                    <h3 class="dish-title">Baião Rockeiro</h3>
+                    <span class="dish-description">O Nosso combo com toque de Rock and Roll</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(100+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$35.60</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/imagens/double tudo.png" class="dish-img" alt="Combo Modesto">
+                    <h3 class="dish-title">Combo Modesto</h3>
+                    <span class="dish-description">Alimenta o estômago e a mente</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(1000+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$28.60</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/imagens/dupla fome.png" class="dish-img" alt="Combo Muita Fome">
+                    <h3 class="dish-title">COMBO MUITA FOME</h3>
+                    <span class="dish-description">Combo especial para os apaixonados em Hamburguer</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(1000+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$46.90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/imagens/chef.png" id="testimonial_chef" alt="Chef">
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+                <div class="feedbacks">
+                    <div class="feedback">
+                        <img src="src/imagens/avatar.png" class="feedback-avatar"  alt="Avatar">
+
+                        <div class="feedback-content">
+                            <p>
+                                <span>Joaquim</span>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Loren aisok aleatorioos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedbacks">
+                    <div class="feedback">
+                        <img src="src/imagens/avatar masculino.png" class="feedback-avatar-masculino"  alt="Avatar masculino">
+
+                        <div class="feedback-content">
+                            <p>
+                                <span>Joana</span>
+                                <span class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Loren aisok aleatorioos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer>
+        <img src="src/imagens/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Plácido Junior
+            </span>
+            <div class="social-media-buttons">
+
+                <a href="#"><i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="#"><i class="fa-brands fa-telegram"></i>
+                </a>
+
+            </div
+
+        </div>
+
+    </footer>
+    <script src="src/styles/script.js"></script>
+</body>
+</html>
