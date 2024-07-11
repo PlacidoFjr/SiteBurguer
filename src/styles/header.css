@@ -23,8 +23,8 @@ header {
     display: flex;
     list-style: none;
     gap: 48px;
-    margin: 0 auto; /* Centro de margem automático */
-    margin-left: 50px; /* Ajustar este valor conforme necessário */
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .nav-item a {
@@ -38,11 +38,6 @@ header {
     border-bottom: 3px solid var(--color-primary-4);
 }
 
-.button-container {
-    display: flex;
-    gap: 16px;
-}
-
 #mobile_btn {
     display: none;
 }
@@ -53,7 +48,7 @@ header {
 
 @media screen and (max-width: 1170px) {
     #nav_list,
-    .button-container {
+    #navbar .btn-default {
         display: none;
     }
 
@@ -86,9 +81,9 @@ header {
 
 /* Estilos Mobile */
 @media (max-width: 768px) {
-    .btn-default, #login_button {
+    .btn-default, #login_button, #login_button_mobile {
         width: calc(100% - 40px); /* Reduzindo o tamanho para encaixar na tela */
-        padding: 12px;
+        padding: 5%;
         font-size: 1rem;
         border-radius: 10px;
         display: flex;
