@@ -5,7 +5,6 @@ header {
     top: 0;
     background-color: var(--color-primary-1);
     z-index: 3;
-    position: sticky;
 }
 
 #navbar {
@@ -16,14 +15,16 @@ header {
 }
 
 #nav_logo {
-    font-size: 24px;
-    color: var(--color-primary-6);
+    font-size: 30px;
+    color: #0FA3B1;
 }
 
 #nav_list {
     display: flex;
     list-style: none;
     gap: 48px;
+    margin: 0 auto; /* Centro de margem automático */
+    margin-left: 50px; /* Ajustar este valor conforme necessário */
 }
 
 .nav-item a {
@@ -37,6 +38,11 @@ header {
     border-bottom: 3px solid var(--color-primary-4);
 }
 
+.button-container {
+    display: flex;
+    gap: 16px;
+}
+
 #mobile_btn {
     display: none;
 }
@@ -47,7 +53,7 @@ header {
 
 @media screen and (max-width: 1170px) {
     #nav_list,
-    #navbar .btn-default {
+    .button-container {
         display: none;
     }
 
@@ -75,5 +81,52 @@ header {
     #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
-    } 
+    }
+}
+
+/* Estilos Mobile */
+@media (max-width: 768px) {
+    .btn-default, #login_button {
+        width: calc(100% - 40px); /* Reduzindo o tamanho para encaixar na tela */
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 10px 20px; /* Espaçamento ao redor do botão */
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+
+    .button-container {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .social-media-buttons {
+        gap: 12px;
+    }
+
+    .social-media-buttons a {
+        width: 40px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.75rem;
+    }
 }
